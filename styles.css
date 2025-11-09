@@ -1,0 +1,75 @@
+body {
+    background: #f2f2f2;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #222;
+}
+
+.header {
+    padding: 30px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid rgba(7, 7, 7, 0.25);
+    box-shadow: 0 6px 18px rgba(46, 46, 46, 0.45);
+}
+
+
+
+.intro-text {
+    width: 80%;
+    max-width: 550px;
+    margin: auto;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+
+.menu {
+margin-top: 40px;
+}
+
+
+/* Botones mejorados */
+.fancy-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    margin: 15px auto;
+    padding: 14px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    border: 2px solid transparent;
+    position: relative;
+    transition: 0.3s;
+}
+
+
+.fancy-btn::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    left: 14px;
+}
+
+
+.fancy-btn:hover {
+    border-color: #000;
+    background: #333;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}

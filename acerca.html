@@ -1,0 +1,120 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Mí</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            /* Fondo gris frío suave */
+            background: linear-gradient(135deg, #393838, #5a5959);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* NAV BAR */
+        nav {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.07);
+            display: flex;
+            justify-content: center;
+            padding: 12px 0;
+            backdrop-filter: blur(6px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        nav a {
+            margin: 0 14px;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 25px;
+            color: rgb(230,230,230);
+            transition: 0.35s;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.18);
+            transform: scale(1.07);
+        }
+
+        /* CARD */
+        .card {
+            background: rgba(255,255,255,0.08);
+            max-width: 780px;
+            width: 90%;
+            margin-top: 60px;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 0.7s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(25px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .perfil {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .perfil img {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            object-fit: cover;
+            box-shadow: 0 0 12px rgba(0,0,0,0.4);
+        }
+
+        .perfil h1 {
+            margin: 0;
+            font-size: 32px;
+            color: white;
+        }
+
+        .texto {
+            margin-top: 18px;
+            font-size: 17px;
+            line-height: 1.45;
+            color: rgb(230,230,230);
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="acerca.html">Acerca de Mí</a>
+        <a href="estudios.html">Estudios Previos</a>
+        <a href="aspiraciones.html">Aspiraciones</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <div class="card">
+        <div class="perfil">
+            <img src="images/Imagen de WhatsApp 2025-11-09 a las 01.17.57_96cd6460.jpg" alt="Mi Foto">
+            <h1>Carlos Ruiz</h1>
+        </div>
+
+        <p class="texto">
+            Soy una persona tranquila, enfocada y con metas claras. Desde pequeño desarrollé disciplina y
+            responsabilidad por medio del deporte, especialmente el fútbol, lo cual marcó mi carácter. 
+            Actualmente estudio Ingeniería de Sistemas, donde he encontrado la motivación para comprender 
+            cómo la tecnología puede usarse para mejorar la vida de las personas y contribuir a la sociedad 
+            de manera positiva.
+        </p>
+    </div>
+
+</body>
+</html>

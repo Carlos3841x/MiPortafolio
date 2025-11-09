@@ -1,0 +1,94 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudios Previos</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #1c1c1c, #3a3a3a);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        nav {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.07);
+            display: flex;
+            justify-content: center;
+            padding: 12px 0;
+            backdrop-filter: blur(6px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        nav a {
+            margin: 0 14px;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 25px;
+            color: rgb(230,230,230);
+            transition: 0.35s;
+        }
+        nav a:hover {
+            background: rgba(255,255,255,0.18);
+            transform: scale(1.07);
+        }
+        nav .active {
+            background: rgba(255,255,255,0.18);
+        }
+        .card {
+            background: rgba(255,255,255,0.08);
+            max-width: 780px;
+            width: 90%;
+            margin-top: 60px;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            margin-top: 0;
+            color: white;
+            font-size: 30px;
+        }
+        .texto {
+            font-size: 17px;
+            line-height: 1.45;
+            color: rgb(230,230,230);
+            text-align: justify;
+        }
+        ul {
+            color: rgb(230,230,230);
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="acerca.html">Acerca de Mí</a>
+    <a class="active" href="estudios.html">Estudios Previos</a>
+    <a href="aspiraciones.html">Aspiraciones</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
+
+<div class="card">
+    <h1>Estudios Previos</h1>
+    <p class="texto">
+        Me gradué del <strong>Colegio Salesiano de San Roque</strong>, donde adquirí valores,
+        disciplina y una formación integral tanto académica como personal.
+    </p>
+
+    <ul>
+        <li>Bachiller Académico - Colegio Salesiano de San Roque.</li>
+        <li>Curso de Auxiliar en Electrónica.</li>
+        <li>Curso actual: Fundamentos Básicos de Ciberseguridad.</li>
+        <li>Estudio de inglés en progreso.</li>
+    </ul>
+</div>
+
+</body>
+</html>
